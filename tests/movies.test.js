@@ -9,7 +9,7 @@ describe("GET /api/movies", () => {
     expect(response.status).toEqual(200);
 });
 
-it("should return the movie name", async () => {
+it("should return the movies name", async () => {
     const response = await request(app).get("/api/movies/1");
 
     expect(response.headers["content-type"]).toMatch(/json/);
